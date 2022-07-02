@@ -1,0 +1,403 @@
+/* CONFIG STYLE */
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light_Grey: hsl(217, 12%, 63%);
+    --Medium_Grey: hsl(216, 12%, 54%);
+    --Dark_Blue: hsl(213, 19%, 18%);
+    --Very_Dark_Blue: hsl(216, 12%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    font-family: 'Overpass', sans-serif;
+    height: 100%;
+}
+
+body {
+    font-size: 62.5%;
+    background-color: var(--Very_Dark_Blue);
+    height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 100vh;
+}
+
+/* MOBILE STYLES */
+
+#mainCard {
+    block-size: 24rem;
+    inline-size: 20rem;
+    background-color: var(--Dark_Blue);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: repeat(5, 20%);
+    grid-template-columns: repeat(5,20%);
+}
+
+.starImg {
+    block-size: 0.8rem;
+    inline-size: 0.8rem;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    margin-top: 2.45rem;
+    margin-left: 2.40rem;
+    z-index: 10;
+}
+
+.starCircle {
+    block-size: 2.4rem;
+    inline-size: 2.4rem;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    margin-top: 1.65rem;
+    margin-left: 1.55rem;
+    background-color: hsl(213, 18%, 24%);
+    z-index: 5;
+    border-radius: 50%;
+}
+
+h1 {
+    color: var(--White);
+    font-size: 1.5rem;
+    grid-row: 2 / 3;
+    grid-column: 1 / 6;
+    margin-top: 0.6rem;
+    margin-left: 1.5rem;
+    user-select: none;
+}
+
+p {
+    color: var(--Light_Grey);
+    font-size: 0.9rem;
+    font-weight: 400;
+    user-select: none;
+}
+
+.pOne {
+    grid-row: 2 / 4;
+    grid-column: 1 / 6 ;
+    margin-top: 3.6rem;
+    margin-left: 1.5rem;
+}
+
+.pTwo {
+    grid-row: 2 / 4;
+    grid-column: 1 / 6 ;
+    margin-top: 5.25rem;
+    margin-left: 1.5rem;
+}
+
+.pThree {
+    grid-row: 2 / 4;
+    grid-column: 1 / 6 ;
+    margin-top: 6.85rem;
+    margin-left: 1.5rem;
+}
+
+a {
+    color: var(--White);
+    user-select: none;
+}
+
+#aOne {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    block-size: 2.6rem;
+    inline-size: 2.6rem;
+    font-size: 0.8rem;
+    margin-top: 0.85rem;
+    margin-left: 1.5rem;
+    padding: 0.9rem;
+    background-color: hsl(213, 18%, 24%);
+    border-radius: 50%;
+    text-align: center;    
+}
+
+#aTwo {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    font-size: 0.8rem;
+    margin-top: 0.85rem;
+    margin-left: 1.2rem;
+    block-size: 2.6rem;
+    inline-size: 2.6rem;
+    font-size: 0.8rem;
+    padding: 0.9rem;
+    background-color: hsl(213, 18%, 24%);
+    border-radius: 50%;
+    text-align: center;
+}
+
+#aThree {
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+    font-size: 0.8rem;
+    margin-top: 0.85rem;
+    margin-left: 0.9rem;
+    block-size: 2.6rem;
+    inline-size: 2.6rem;
+    background-color: hsl(213, 18%, 24%);
+    border-radius: 50%;
+    text-align: center;
+    padding: 0.9rem;
+}
+
+#aFour {
+    grid-row: 4 / 5;
+    grid-column: 4 / 5;
+    font-size: 0.8rem;
+    margin-top: 0.85rem;
+    margin-left: 0.7rem;
+    block-size: 2.6rem;
+    inline-size: 2.6rem;
+    background-color: hsl(213, 18%, 24%);
+    border-radius: 50%;
+    text-align: center;
+    padding: 0.9rem;
+}
+
+#aFive {
+    grid-row: 4 / 5;
+    grid-column: 5 / 6;
+    font-size: 0.8rem;
+    margin-top: 0.85rem;
+    margin-left: 0.2rem;
+    block-size: 2.6rem;
+    inline-size: 2.6rem;
+    background-color: hsl(213, 18%, 24%);
+    border-radius: 50%;
+    text-align: center;
+    padding: 0.9rem;
+}
+
+#aOne:active, #aTwo:active, #aThree:active, #aFour:active, #aFive:active {
+    background-color: var(--Medium_Grey);
+}
+
+button {
+    grid-row: 5 / 6;
+    grid-column: 1 / 6;
+    block-size: 2.8rem;
+    inline-size: 17rem;
+    color: var(--White);
+    background-color: var(--Orange);
+    font-family: "Overpass";
+    font-weight: 700;
+    border-radius: 3rem;
+    border-style: none;
+    margin-left: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+/* HIDDEN CARD STYLES */
+
+#hiddenCard {
+    block-size: 24rem;
+    inline-size: 20rem;
+    background-color: var(--Dark_Blue);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.ratingImg {
+    block-size: 6.2rem;
+    inline-size: 9rem;
+    margin-top: 2.2rem;
+}
+
+h2 {
+    color: var(--White);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    user-select: none;
+}
+
+.ratingParOne {
+    margin-top: 1rem;
+}
+
+.ratingParTwo {
+    margin-top: 0.4rem;
+}
+
+.ratingParThree {
+    margin-top: 0.4rem;
+}
+
+#selectedRate {
+    margin-top: 2rem;
+    background-color: hsl(213, 18%, 24%);
+    block-size: 2rem;
+    inline-size: 10.5rem;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--Orange);
+}
+
+.parHidden_parOne {
+    display: none;
+}
+.parHidden_parTwo {
+    display: none;
+}
+.parHidden_parThree {
+    display: none;
+}
+
+.ratingHidden_one {
+    display: none;
+}
+
+.ratingHidden_two {
+    display: none;
+}
+
+.ratingHidden_three {
+    display: none;
+}
+
+/* DESKTOP STYLES */
+
+@media (min-width: 1440px)
+{
+    #mainCard {
+        block-size: 23.5rem;
+        inline-size: 24rem;
+    }
+
+    h1 {
+        margin-top: 1rem;
+    }
+
+    button {
+        block-size: 2.6rem;
+        inline-size: 20rem;
+        margin-top: 0.5rem;
+        margin-left: 2rem;
+    }
+
+    button:hover {
+        background-color: var(--White);
+        color: var(--Orange);
+        cursor: pointer;
+    }
+
+    #aOne:hover, #aTwo:hover, #aThree:hover, #aFour:hover, #aFive:hover {
+        background-color: var(--Orange);
+        cursor: pointer;
+    }
+
+    #aOne {
+        margin-left: 2rem;
+        block-size: 2.8rem;
+        inline-size: 2.8rem;
+    }
+
+    #aTwo {
+        block-size: 2.8rem;
+        inline-size: 2.8rem;
+        margin-left: 1.4rem;
+    }
+
+    #aThree {
+        block-size: 2.8rem;
+        inline-size: 2.8rem;
+    }
+
+    #aFour {
+        block-size: 2.8rem;
+        inline-size: 2.8rem;
+        margin-left: 0.5rem;
+    }
+
+    #aFive {
+        block-size: 2.8rem;
+        inline-size: 2.8rem;
+        margin-left: 0rem;
+    }
+
+    .pOne {
+        display: none;
+    }
+    
+    .pTwo {
+        display: none;
+    }
+
+    .pThree {
+        display: none;
+    }
+
+    .parHidden_parOne {
+        display: block;
+        grid-row: 2 / 4;
+        grid-column: 1 / 6 ;
+        margin-top: 3.85rem;
+        margin-left: 1.5rem;
+    }
+
+    .parHidden_parTwo {
+        display: block;
+        grid-row: 2 / 4;
+        grid-column: 1 / 6 ;
+        margin-top: 5.50rem;
+        margin-left: 1.5rem;
+    }
+
+    .parHidden_parThree {
+        display: block;
+        grid-row: 2 / 4;
+        grid-column: 1 / 6 ;
+        margin-top: 7.10rem;
+        margin-left: 1.5rem;
+    }
+
+    #hiddenCard {
+        block-size: 23.5rem;
+        inline-size: 24rem;
+    }
+
+    .ratingParOne {
+        display: none;
+    }
+    
+    .ratingParTwo {
+        display: none;
+    }
+    
+    .ratingParThree {
+        display: none;
+    }
+
+    .ratingHidden_one {
+        display: block;
+        margin-top: 0.6rem;
+    }
+
+    .ratingHidden_two {
+        display: block;
+        margin-top: 0.3rem;
+    }
+
+    .ratingHidden_three {
+        display: block;
+        margin-top: 0.3rem;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styleRating.css" type="text/css" rel="stylesheet"/>
+    <title>Interacting Rating Component</title>
+</head>
+<body>
+    <main>
+        <!-- Main Card -->
+        <section id="mainCard">
+            <img class="starImg" src="Iconos/icon-star.svg" alt="Star Image"/>
+            <div class="starCircle"></div>
+            <h1>How did we do?</h1>
+            <p class="pOne">Please let us know how we did with your</p>
+            <p class="pTwo">support request. All feedback is appreciated</p>
+            <p class="pThree">to help us improve our offering!</p>
+            <p class="parHidden_parOne">Please let us know how we did with your support</p>
+            <p class="parHidden_parTwo">request. All feedback is appreciated to help us</p>      
+            <p class="parHidden_parThree">improve our offering!</p> 
+            <a id="aOne">1</a>
+            <a id="aTwo">2</a>
+            <a id="aThree">3</a>
+            <a id="aFour">4</a>
+            <a id="aFive">5</a>
+            <button id="button">SUBMIT</button>
+        </section>
+        <!-- Hidden Card-->
+        <section id="hiddenCard">
+            <img class="ratingImg" src="Iconos/illustration-thank-you.svg" alt="Rating Image"/>
+            <p id="selectedRate"></p>
+            <h2>Thank you!</h2>
+            <p class="ratingParOne">We appreciate you taking the time to give a</p>
+            <p class="ratingParTwo">rating. If you ever need more support, don't</p>
+            <p class="ratingParThree">hesitate to get in touch!</p>
+            <p class="ratingHidden_one">We appreciate you taking the time to give a rating.</p>
+            <p class="ratingHidden_two">If you ever need more support, don't hesitate to</p>
+            <P class="ratingHidden_three">get in touch!</P>
+        </section>
+    </main>
+    <script src="scriptRating.js"></script> 
+</body>
+</html>
